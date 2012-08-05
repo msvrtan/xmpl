@@ -1,0 +1,13 @@
+#backup files from unix editors
+*~
+
+#komodo
+*.kpf
+*.komodoproject
+
+#PHPStorm
+.idea
+
+#merge files
+*.orig
+
