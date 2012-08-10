@@ -28,8 +28,8 @@ $objSession->set('value2', 2);
 // Show all values after first set of changes..
 var_dump($objSession->get());
 
-// Instantiate another session singleton.
-$objAnotherSessionInstance = SessionSingleton::getInstance();
+// What if I do this?
+$objAnotherSessionInstance = clone($objSession);
 
 // Show all values from this new object instance.
 var_dump($objAnotherSessionInstance->get());
